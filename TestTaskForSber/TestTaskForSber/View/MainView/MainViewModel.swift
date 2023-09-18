@@ -24,7 +24,8 @@ final class MainViewModel: MainViewModelProtocol {
                 case .finished:
                     break
                 case .failure(let error):
-                    self.showAlert = true 
+                    self.showAlert = true
+                    self.loadImage = false 
                     print(error.localizedDescription)
                 }
             }, receiveValue: { value in

@@ -7,7 +7,7 @@ protocol GetImageServiceProtocol {
 
 final class GetImageService: GetImageServiceProtocol {
     
-    let decoder = JSONDecoder()
+    private let decoder = JSONDecoder()
     
     private let baseURL = "https://api.unsplash.com/photos/random"
     

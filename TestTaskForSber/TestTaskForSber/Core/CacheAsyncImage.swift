@@ -34,7 +34,7 @@ struct CacheAsyncImage<Content>: View where Content: View {
         }
     }
 
-    func cacheAndRender(phase: AsyncImagePhase) -> some View {
+    private func cacheAndRender(phase: AsyncImagePhase) -> some View {
         if let url = url,  case .success(let image) = phase {
             ImageCache[url] = image
         }

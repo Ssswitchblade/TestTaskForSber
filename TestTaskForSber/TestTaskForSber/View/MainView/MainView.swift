@@ -4,7 +4,7 @@ import Foundation
 struct MainView: View {
     
     @StateObject private var viewModel = MainViewModel()
-    @State var isLinkActive: Bool = false
+    @State private var isLinkActive: Bool = false
     
     var body: some View {
         NavigationView {
