@@ -16,6 +16,12 @@ final class MainViewModel: MainViewModelProtocol {
     
     private let networkService = GetImageService()
     
+    private let coordinator: MainViewCoordinator
+    
+    init(coordinator: MainViewCoordinator) {
+        self.coordinator = coordinator
+    }
+    
     func getImage() {
         networkService.getRandomImage()
             .receive(on: RunLoop.main)
@@ -31,6 +37,10 @@ final class MainViewModel: MainViewModelProtocol {
             }, receiveValue: { value in
                 self.imageUrl = URL(string: value.imageUrls.small)
             }).store(in: &bag)
+    }
+    
+    func toImageZoomView() {
+        coordinator.toZoomView(url: imageUrl)
     }
 }
      

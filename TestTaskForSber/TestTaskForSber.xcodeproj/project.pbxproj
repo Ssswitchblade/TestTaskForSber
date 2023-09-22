@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		847A7BFC2AB6F99D00EFF402 /* TestTaskForSberApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847A7BFB2AB6F99D00EFF402 /* TestTaskForSberApp.swift */; };
+		844D202C2ABDBE8400D22724 /* AppDelegate .swift in Sources */ = {isa = PBXBuildFile; fileRef = 844D202B2ABDBE8400D22724 /* AppDelegate .swift */; };
+		844D202E2ABDBE8E00D22724 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844D202D2ABDBE8E00D22724 /* SceneDelegate.swift */; };
+		844D20512ABDC04400D22724 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844D20502ABDC04400D22724 /* AppCoordinator.swift */; };
+		844D20532ABDC21A00D22724 /* MainViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844D20522ABDC21A00D22724 /* MainViewCoordinator.swift */; };
 		847A7C002AB6F99D00EFF402 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847A7BFF2AB6F99D00EFF402 /* Assets.xcassets */; };
 		847A7C032AB6F99D00EFF402 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847A7C022AB6F99D00EFF402 /* Preview Assets.xcassets */; };
 		847A7C0F2AB6FA1800EFF402 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847A7C0E2AB6FA1800EFF402 /* MainView.swift */; };
@@ -19,8 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		844D202B2ABDBE8400D22724 /* AppDelegate .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate .swift"; sourceTree = "<group>"; };
+		844D202D2ABDBE8E00D22724 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		844D204F2ABDBEF200D22724 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		844D20502ABDC04400D22724 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		844D20522ABDC21A00D22724 /* MainViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewCoordinator.swift; sourceTree = "<group>"; };
 		847A7BF82AB6F99D00EFF402 /* TestTaskForSber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestTaskForSber.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		847A7BFB2AB6F99D00EFF402 /* TestTaskForSberApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTaskForSberApp.swift; sourceTree = "<group>"; };
 		847A7BFF2AB6F99D00EFF402 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		847A7C022AB6F99D00EFF402 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		847A7C0E2AB6FA1800EFF402 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -61,6 +68,7 @@
 		847A7BFA2AB6F99D00EFF402 /* TestTaskForSber */ = {
 			isa = PBXGroup;
 			children = (
+				844D204F2ABDBEF200D22724 /* Info.plist */,
 				847A7C0C2AB6F9DF00EFF402 /* App */,
 				847A7C0B2AB6F9DB00EFF402 /* View */,
 				847A7C0A2AB6F9D600EFF402 /* Network */,
@@ -108,7 +116,9 @@
 		847A7C0C2AB6F9DF00EFF402 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				847A7BFB2AB6F99D00EFF402 /* TestTaskForSberApp.swift */,
+				844D202B2ABDBE8400D22724 /* AppDelegate .swift */,
+				844D202D2ABDBE8E00D22724 /* SceneDelegate.swift */,
+				844D20502ABDC04400D22724 /* AppCoordinator.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -118,6 +128,7 @@
 			children = (
 				847A7C0E2AB6FA1800EFF402 /* MainView.swift */,
 				847A7C102AB6FA2700EFF402 /* MainViewModel.swift */,
+				844D20522ABDC21A00D22724 /* MainViewCoordinator.swift */,
 			);
 			path = MainView;
 			sourceTree = "<group>";
@@ -217,10 +228,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				847A7C0F2AB6FA1800EFF402 /* MainView.swift in Sources */,
-				847A7BFC2AB6F99D00EFF402 /* TestTaskForSberApp.swift in Sources */,
+				844D202C2ABDBE8400D22724 /* AppDelegate .swift in Sources */,
+				844D202E2ABDBE8E00D22724 /* SceneDelegate.swift in Sources */,
 				847A7C112AB6FA2700EFF402 /* MainViewModel.swift in Sources */,
 				847A7C182AB7060F00EFF402 /* ImageModel.swift in Sources */,
+				844D20532ABDC21A00D22724 /* MainViewCoordinator.swift in Sources */,
 				847A7C1B2AB706C700EFF402 /* GetImageService.swift in Sources */,
+				844D20512ABDC04400D22724 /* AppCoordinator.swift in Sources */,
 				847A7C3A2AB7367A00EFF402 /* CacheAsyncImage.swift in Sources */,
 				847A7C1E2AB7180400EFF402 /* ImageZoomView.swift in Sources */,
 			);
@@ -279,7 +293,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -333,7 +347,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -354,7 +368,7 @@
 				DEVELOPMENT_TEAM = APW3G743DH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = TestTaskForSber/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -384,7 +398,7 @@
 				DEVELOPMENT_TEAM = APW3G743DH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = TestTaskForSber/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

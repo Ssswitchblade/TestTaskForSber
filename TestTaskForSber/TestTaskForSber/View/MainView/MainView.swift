@@ -3,13 +3,10 @@ import Foundation
 
 struct MainView: View {
     
-    @StateObject private var viewModel = MainViewModel()
-    @State private var isLinkActive: Bool = false
+    @EnvironmentObject private var viewModel: MainViewModel
     
     var body: some View {
-        NavigationView {
             VStack {
-                NavigationLink(destination: ImageZoomView(imageUrl: viewModel.imageUrl), isActive: $isLinkActive) { }
                 CacheAsyncImage(url: viewModel.imageUrl) { phase in
                     switch phase {
                     case .success(let image):
@@ -34,7 +31,7 @@ struct MainView: View {
                 }.frame(width: 200, height: 200, alignment: .center)
                 .onTapGesture {
                     guard let _ = viewModel.imageUrl else { return }
-                    self.isLinkActive = true
+                    viewModel.toImageZoomView()
                 }
                 Spacer().frame(height: 20)
                 Button("Get Image!") {
@@ -47,7 +44,6 @@ struct MainView: View {
             }
              .padding()
         }
-    }
 }
 
 struct MainView_Previews: PreviewProvider {
