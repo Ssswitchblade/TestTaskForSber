@@ -1,12 +1,9 @@
 import Foundation
 import Combine
 import SwiftUI
+import Factory
 
-protocol MainViewModelProtocol: ObservableObject {
-    
-}
-
-final class MainViewModel: MainViewModelProtocol {
+final class MainViewModel: ObservableObject {
 
     @Published var imageUrl: URL?
     @Published var loadImage: Bool = false
@@ -14,11 +11,11 @@ final class MainViewModel: MainViewModelProtocol {
     
     private var bag = Set<AnyCancellable>()
     
-    private let networkService = GetImageService()
+    private let networkService: GetImageServiceProtocol = Container.shared.getImageService()
     
-    private let coordinator: MainViewCoordinator
+    private let coordinator: MainViewCoordinatorCoordinator
     
-    init(coordinator: MainViewCoordinator) {
+    init(coordinator: MainViewCoordinatorCoordinator) {
         self.coordinator = coordinator
     }
     

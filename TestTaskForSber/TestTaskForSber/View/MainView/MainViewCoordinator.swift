@@ -2,7 +2,12 @@ import UIKit
 import Foundation
 import SwiftUI
 
-final class MainViewCoordinator {
+protocol MainViewCoordinatorCoordinator: AnyObject {
+    func openMainView()
+    func toZoomView(url: URL?)
+}
+
+final class MainViewCoordinator: MainViewCoordinatorCoordinator {
     
     private let navigationController: UINavigationController
     

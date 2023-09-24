@@ -13,5 +13,4 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         appCoordinator.showRootView()
         window?.makeKeyAndVisible()
     }
-
 }

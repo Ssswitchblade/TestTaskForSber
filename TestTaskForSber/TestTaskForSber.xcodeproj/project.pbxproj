@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		485F4A49FD41B23EA5CABBEC /* Pods_TestTaskForSber.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA79D639958E775EA7C8C0AB /* Pods_TestTaskForSber.framework */; };
 		844D202C2ABDBE8400D22724 /* AppDelegate .swift in Sources */ = {isa = PBXBuildFile; fileRef = 844D202B2ABDBE8400D22724 /* AppDelegate .swift */; };
 		844D202E2ABDBE8E00D22724 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844D202D2ABDBE8E00D22724 /* SceneDelegate.swift */; };
 		844D20512ABDC04400D22724 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844D20502ABDC04400D22724 /* AppCoordinator.swift */; };
 		844D20532ABDC21A00D22724 /* MainViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844D20522ABDC21A00D22724 /* MainViewCoordinator.swift */; };
+		844D207F2ABDD0FC00D22724 /* DI .swift in Sources */ = {isa = PBXBuildFile; fileRef = 844D207E2ABDD0FC00D22724 /* DI .swift */; };
 		847A7C002AB6F99D00EFF402 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847A7BFF2AB6F99D00EFF402 /* Assets.xcassets */; };
 		847A7C032AB6F99D00EFF402 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847A7C022AB6F99D00EFF402 /* Preview Assets.xcassets */; };
 		847A7C0F2AB6FA1800EFF402 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847A7C0E2AB6FA1800EFF402 /* MainView.swift */; };
@@ -22,11 +24,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		37A362EA9811109C62AF2C67 /* Pods-TestTaskForSber.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTaskForSber.debug.xcconfig"; path = "Target Support Files/Pods-TestTaskForSber/Pods-TestTaskForSber.debug.xcconfig"; sourceTree = "<group>"; };
+		804B3290143B1B3856C69D82 /* Pods-TestTaskForSber.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTaskForSber.release.xcconfig"; path = "Target Support Files/Pods-TestTaskForSber/Pods-TestTaskForSber.release.xcconfig"; sourceTree = "<group>"; };
 		844D202B2ABDBE8400D22724 /* AppDelegate .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate .swift"; sourceTree = "<group>"; };
 		844D202D2ABDBE8E00D22724 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		844D204F2ABDBEF200D22724 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		844D20502ABDC04400D22724 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		844D20522ABDC21A00D22724 /* MainViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewCoordinator.swift; sourceTree = "<group>"; };
+		844D207E2ABDD0FC00D22724 /* DI .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DI .swift"; sourceTree = "<group>"; };
 		847A7BF82AB6F99D00EFF402 /* TestTaskForSber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestTaskForSber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		847A7BFF2AB6F99D00EFF402 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		847A7C022AB6F99D00EFF402 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -36,6 +41,7 @@
 		847A7C1A2AB706C700EFF402 /* GetImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetImageService.swift; sourceTree = "<group>"; };
 		847A7C1D2AB7180400EFF402 /* ImageZoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageZoomView.swift; sourceTree = "<group>"; };
 		847A7C392AB7367A00EFF402 /* CacheAsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheAsyncImage.swift; sourceTree = "<group>"; };
+		AA79D639958E775EA7C8C0AB /* Pods_TestTaskForSber.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestTaskForSber.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,17 +49,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				485F4A49FD41B23EA5CABBEC /* Pods_TestTaskForSber.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22EA07EF7C59CCD36C433581 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37A362EA9811109C62AF2C67 /* Pods-TestTaskForSber.debug.xcconfig */,
+				804B3290143B1B3856C69D82 /* Pods-TestTaskForSber.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5A27797785D763C708ECB890 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA79D639958E775EA7C8C0AB /* Pods_TestTaskForSber.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		847A7BEF2AB6F99D00EFF402 = {
 			isa = PBXGroup;
 			children = (
 				847A7BFA2AB6F99D00EFF402 /* TestTaskForSber */,
 				847A7BF92AB6F99D00EFF402 /* Products */,
+				22EA07EF7C59CCD36C433581 /* Pods */,
+				5A27797785D763C708ECB890 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				847A7C392AB7367A00EFF402 /* CacheAsyncImage.swift */,
+				844D207E2ABDD0FC00D22724 /* DI .swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -164,9 +191,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 847A7C062AB6F99D00EFF402 /* Build configuration list for PBXNativeTarget "TestTaskForSber" */;
 			buildPhases = (
+				55401D4BB5A0F589455A24A6 /* [CP] Check Pods Manifest.lock */,
 				847A7BF42AB6F99D00EFF402 /* Sources */,
 				847A7BF52AB6F99D00EFF402 /* Frameworks */,
 				847A7BF62AB6F99D00EFF402 /* Resources */,
+				1784B3F62F9B9743421EACC5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -222,6 +251,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1784B3F62F9B9743421EACC5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestTaskForSber/Pods-TestTaskForSber-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestTaskForSber/Pods-TestTaskForSber-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestTaskForSber/Pods-TestTaskForSber-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		55401D4BB5A0F589455A24A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestTaskForSber-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		847A7BF42AB6F99D00EFF402 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -232,6 +303,7 @@
 				844D202E2ABDBE8E00D22724 /* SceneDelegate.swift in Sources */,
 				847A7C112AB6FA2700EFF402 /* MainViewModel.swift in Sources */,
 				847A7C182AB7060F00EFF402 /* ImageModel.swift in Sources */,
+				844D207F2ABDD0FC00D22724 /* DI .swift in Sources */,
 				844D20532ABDC21A00D22724 /* MainViewCoordinator.swift in Sources */,
 				847A7C1B2AB706C700EFF402 /* GetImageService.swift in Sources */,
 				844D20512ABDC04400D22724 /* AppCoordinator.swift in Sources */,
@@ -359,6 +431,7 @@
 		};
 		847A7C072AB6F99D00EFF402 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37A362EA9811109C62AF2C67 /* Pods-TestTaskForSber.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -389,6 +462,7 @@
 		};
 		847A7C082AB6F99D00EFF402 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 804B3290143B1B3856C69D82 /* Pods-TestTaskForSber.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
